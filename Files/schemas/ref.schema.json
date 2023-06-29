@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Test file",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "xField": {
+      "$ref": "#/definitions/values"
+    },
+    "yField": {
+      "$ref": "#/definitions/values"
+    }
+  },
+  "definitions": {
+    "values": {
+      "type":"object",
+      "properties": {
+        "val1": {
+          "description": "value 1",
+          "type":"integer",
+          "minimum": 0
+        },
+        "val2": {
+          "description": "value 2",
+          "type":"integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}
